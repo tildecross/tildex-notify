@@ -1,19 +1,16 @@
 #!notify/bin/python3
 
+import hug
 import os
-import sys
 from pushbullet import Pushbullet
 
 
-def create_note(title, content):
+@hug.cli()
+def create_note(title: hug.types.text, content: hug.types.text):
     api_key = os.environ["PB_API_KEY"]
     pb = Pushbullet(api_key)
     pb.push_note(title, content)
 
 
-if len(sys.argv) >= 3:
-    title = sys.argv[1]
-    body = sys.argv[2]
-    create_note(title, body)
-else:
-    print("Error: Missing arguments")
+if __name__ == '__main__':
+    create_note.interface.cli()
