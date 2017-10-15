@@ -7,7 +7,9 @@ from pushbullet import Pushbullet
 if len(sys.argv) >= 3:
     api_key = os.environ["PB_API_KEY"]
     pb = Pushbullet(api_key)
-
-    pb.push_note(sys.argv[1], sys.argv[2])
+    title = sys.argv[1]
+    body = sys.argv[2]
+    
+    pb.push_note(title, body)
 else:
     print("Error: Missing arguments")
