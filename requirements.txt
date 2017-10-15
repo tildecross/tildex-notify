@@ -1,0 +1,6 @@
+This application requires some packages like:
+
+- python3;
+- os;
+- sys;
+- Pushbullet;
