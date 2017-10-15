@@ -5,6 +5,7 @@ import os
 from pushbullet import Pushbullet
 
 
+@hug.get()
 @hug.cli()
 def create_note(title: hug.types.text, content: hug.types.text):
     api_key = os.environ["PB_API_KEY"]
