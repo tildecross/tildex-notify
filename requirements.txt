@@ -1,0 +1,7 @@
+# REQUIREMENTS
+
+Packages needed to import in app.py:
+
+import os
+import sys
+from pushbullet import Pushbullet
