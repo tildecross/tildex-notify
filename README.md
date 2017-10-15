@@ -3,4 +3,5 @@ Tildex :: Notify
 
 Just a simple utility to pass data into Pushbullet.
 
-&copy; Copyright 2017, Tildecross under [the ISC Licencse](LICENSE).
+## License
+* This project is licensed under the ISC Licencse - see the LICENSE file for details.
